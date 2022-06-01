@@ -89,7 +89,7 @@ li{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    margin: 2rem;
+    margin: 1rem;
 }
 .main-texto{
     display: grid;
@@ -107,7 +107,7 @@ li{
 .main-texto p{
     font-size: 2.5rem;
     width: 30ch;
-    color: var(--cinza);
+    color: #9b9289;
 }
 .main-texto a{
     text-decoration: none;
@@ -155,7 +155,6 @@ li{
     .header-principal{
         flex-direction: column;
         gap: 2rem;
-        flex: 1;
     }
     .header-logo{
         margin-left: 0;
@@ -173,13 +172,15 @@ li{
          margin-right: 0;
      }
 }
-
-@media (max-width: 375px){
-    .main-texto h1{
-        font-size: 3rem;
+@media (max-width: 450px){
+    .main-principal{
+        margin: 5rem 1rem 0 1rem;
     }
-    .main-texto p{
-        font-size: 1.6rem;
+}
+@media (max-width: 375px){
+    
+    .main-texto h1{
+        font-size: 3.3rem;
     }
     .main-texto a{
         padding: 1.5rem 5.6rem;
