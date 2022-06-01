@@ -14,8 +14,8 @@ html{
     font-size: 62.5%;
 }
 html, body{
-    width: 100%;
     height: 100%;
+    width: 100%;
     font-family: 'Roboto';
 }
 img{
@@ -26,15 +26,22 @@ li{
     list-style: none;
 }
 .container{
+    position: relative;
+    height: 100%;
     max-width: 110rem;
     width: 100%;
     margin: 0 auto;
 }
 .header-container{
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+}
+.header-principal{
     display: flex;
     justify-content: space-between;
     height: 6rem;
-    margin-top: 2rem;
+   width: 100%;
     align-items: center;
 }
 .header-logo{
@@ -43,37 +50,46 @@ li{
     color: var(--laranja);
     margin-left: 2rem;
 }
-.header-navegacao{
+.navegacao-items{
     display: flex;
     gap: 1rem;
 }
-.header-navegacao a{
+.navegacao-items a{
     position: relative;
     text-decoration: none;
     color: var(--cinza);
     font-size: 2rem;
-    margin-right: 2rem;
     padding: 1.6rem;
-    
 }
-.header-navegacao a::after{
+.navegacao-items a::after{
     content: "";
     position: absolute;
     bottom: 0;
     left: 1.6rem;
     width: 0%;
     height: 0.3rem;
-    background-color: var(--cinza);
+    background-color: var(--laranja);
     transition: 0.3s ease-in-out;
 }
-.header-navegacao a:hover::after{
+.navegacao-items a:hover{
+    color: var(--laranja);
+}
+.navegacao-items a:hover::after{
     width: 100%;
+}
+.navegacao-items li:last-child a{
+    margin-right: 2rem;
 }
 .main-container{
     display: grid;
+    height: 100%;
+    align-items: center;
+}
+.main-principal{
+    display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    margin: 5rem 1rem;
+    margin: 2rem;
 }
 .main-texto{
     display: grid;
@@ -105,16 +121,17 @@ li{
 .main-texto a:hover{
     background-color: #bb7825;
 }
-.main-container img{
+.main-principal img{
     justify-self: center;
     min-height: 100%;
     object-fit: cover;
 }
 
 @media (max-width: 900px){
-    .main-container{
+    .main-principal{
         grid-template-columns: auto;
-        grid-template-rows: auto auto
+        grid-template-rows: auto auto;
+        margin: 9rem 1rem 0 1rem;
     }
     .main-texto{
         order: 1;
@@ -130,12 +147,12 @@ li{
     .main-texto a{
         justify-self: center;
     }
-    .main-container img{
+    .main-principal img{
         max-height: 35.6rem;
     }
 }
 @media (max-width: 650px){
-    .header-container{
+    .header-principal{
         flex-direction: column;
         gap: 2rem;
         flex: 1;
@@ -151,6 +168,9 @@ li{
      }
      .main-texto p{
          font-size: 2rem;
+     }
+     .navegacao-items li:last-child a{
+         margin-right: 0;
      }
 }
 
