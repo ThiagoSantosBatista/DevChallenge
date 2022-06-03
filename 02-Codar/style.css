@@ -1,0 +1,91 @@
+:root{
+    --vermelho: #D6000D
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Roboto';
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.container{
+    max-width: 110rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.header-container{
+    height: 7rem;
+    color: white;
+}
+.header-navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+    margin: 0 2rem;  
+}
+.header-logo{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--vermelho);
+}
+.logo-ponto{
+    color: black;
+}
+.navegacao-items{
+    display: flex;
+     gap: 1rem;
+}
+.navegacao-items a{
+    position: relative;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: black;
+}
+.navegacao-items a:hover{
+    color: var(--vermelho);
+}
+.navegacao-items a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    width: 0%;
+    height: 0.3rem;
+    background-color: var(--vermelho);
+    transition: 0.3s ease-in-out;
+}
+.navegacao-items a:hover::after{
+    width: 100%;
+}
+.login a{
+    padding: 1rem 4rem; 
+    border-radius: 1rem;
+    color: white;
+    background: var(--vermelho);
+}
+.login a:hover{
+    color: white;
+    background-color: #b40410;
+}
+.login a::after{
+    display: none;
+}
