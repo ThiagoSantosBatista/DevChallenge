@@ -18,7 +18,7 @@ body {
 }
 body {
   font-size: 1rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial;
 }
 li {
   list-style: none;
@@ -60,17 +60,17 @@ img{
   display: flex;
   gap: 1rem;
 }
-.navegacao-items li > a {
+.nav-item a {
   position: relative;
   padding: 1rem;
   margin-right: 1rem;
   font-size: 2rem;
   color: black;
 }
-.navegacao-items li > a:hover {
+.nav-item a:hover {
   color: var(--cor-primario);
 }
-.navegacao-items li > a::after {
+.nav-item a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -80,44 +80,50 @@ img{
   background-color: var(--cor-primario);
   transition: 0.3s ease-in-out;
 }
-.navegacao-items li > a:hover::after {
+.nav-item a:hover::after {
   width: 100%;
 }
-.login a {
+.login{
+  font-family: 'Roboto', Arial;
   font-size: 2rem;
   padding: 1rem 4rem;
+  border: none;
   border-radius: 1rem;
   color: white;
   background: var(--cor-primario);
+  cursor: pointer;
 }
-.login a:hover {
-  color: white;
+.login:hover {
   background-color: var(--hover-primario);
 }
 .main-container{
-  height: calc(100vh - 7rem);
-  padding: 2rem;
+  height: 100%;
+  width: 100%;
 }
-.main-principal{
+.main-inicio{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
-  margin-top: 5rem;
   align-items: center;
+  height: calc(100vh - 7rem);
+  padding: 2rem;
 }
 .principal-texto{
   display: grid;
   grid-template-rows: repeat(3, auto);
 }
-.principal-texto a{
+.principal-texto button{
+  font-family: 'Roboto', Arial;
   font-size: 1.8rem;
   padding: 1rem 4rem;
   border-radius: 1rem;
+  border: none;
   margin-top: 2rem;
+  color: white;
   justify-self: left;
   background-color: var(--cor-primario);
 }
-.principal-texto a:hover{
+.principal-texto button:hover{
   background-color: var(--hover-primario);
 }
 .principal-texto h1{
@@ -126,4 +132,65 @@ img{
 }
 .principal-texto p{
   font-size: 2rem;
+}
+.principal-img{
+  object-fit: cover;
+}
+.main-meio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  margin: 5rem 0;
+  align-items: center;
+  padding: 2rem;
+}
+.main-lista{
+  margin-left: 6rem
+}
+.lista-item + li{
+  margin-top: 1.6rem;
+}
+.lista-item{
+  margin-left: 4.7rem;
+  display: block;
+  font-size: 2rem;
+  position: relative;
+}
+.lista-item::before{
+  content: "";
+  display: block;
+  background-image: url(/img/icons8-ok.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -5rem;
+  top: -0.3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.main-lista h2{
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+.main-lista form{
+  margin-top: 1rem;
+}
+.lista-ligar input{
+  padding: 1.5rem;
+  background-color: lightgray;
+  border: none;
+  border-radius: 4px;
+}
+.lista-ligar button{
+  padding: 1.4rem 3rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--cor-primario);
+  color: white;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.lista-ligar button:hover{
+  background: var(--hover-primario);
 }
