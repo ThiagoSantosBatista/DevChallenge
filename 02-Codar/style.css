@@ -54,6 +54,7 @@ img{
 .header-logo {
   font-size: 3.5rem;
   font-weight: 900;
+  cursor: pointer;
   color: var(--cor-primario);
 }
 .logo-ponto {
@@ -124,6 +125,7 @@ img{
   border-radius: 1rem;
   border: none;
   margin-top: 2rem;
+  cursor: pointer;
   color: white;
   justify-self: left;
   background-color: var(--cor-primario);
@@ -199,6 +201,41 @@ img{
 .lista-ligar button:hover{
   background: var(--hover-primario);
 }
+.main-final{
+  margin: 15rem 2rem 8rem 2rem;
+}
+.final-comentario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.circulo{
+  display:block;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  grid-row: 1/-1;
+  align-self: initial;
+  background-color: #d6000d;
+}
+.comentario{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
+  background: lightgray;
+  column-gap: 1rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}
+.comentario h4{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.comentario p{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
 .footer-container{
   position: static;
   bottom: 0;
@@ -214,6 +251,34 @@ img{
   max-width: 120rem;
   grid-template-columns: repeat(4, 1fr);
   padding: 5rem 3rem;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 auto;
+  font-size: 1.4rem;
+}
+.rodape-um, 
+.rodape-dois,
+.rodape-quatro{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  align-self: initial;
+}
+.rodape-tres{
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  align-self: initial;
+}
+.redes-item{
+  display: inline-block;
+}
+.redes-item + a{
+  margin-left: 1rem;
+}
+.rodape h2{
+  font-size: 3rem;
+}
+.rodape h3{
+  margin-top: 1rem;
+  font-size: 2rem;
 }
