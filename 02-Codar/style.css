@@ -31,6 +31,8 @@ a {
 img{
   max-width: 100%;
   display: block;
+  object-fit: cover;
+
 }
 .container {
   position: relative;
@@ -112,7 +114,7 @@ img{
   gap: 10rem;
   align-items: center;
   height: calc(100vh - 7rem);
-  padding: 2rem;
+  padding: 6rem;
 }
 .principal-texto{
   display: grid;
@@ -139,9 +141,6 @@ img{
 }
 .principal-texto p{
   font-size: 2rem;
-}
-.principal-img{
-  object-fit: cover;
 }
 .main-meio{
   display: grid;
@@ -281,4 +280,73 @@ img{
 .rodape h3{
   margin-top: 1rem;
   font-size: 2rem;
+}
+
+@media (max-width: 1075px){
+  .lista-ligar button{
+    display: block;
+    margin: 1rem 0rem;
+  }
+  .main-inicio{
+    grid-template-columns: auto auto;
+    gap: 5rem;
+  }
+}
+
+@media(max-width: 780px){
+  .main-inicio{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .principal-img{
+    max-width: 32.8rem;
+  }
+  .principal-texto button{
+    font-size: 2rem;
+    justify-self: center;
+    padding: 1.5rem 6rem;
+  }
+  .main-lista{
+    margin: 0
+  }
+  .main-meio{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-meio img{
+    justify-self: center;
+    max-width: 32.8rem;
+    order: -1;
+  }
+  .lista-item{
+    justify-self: center;
+    text-align: left;
+    margin-left: 10rem;
+  }
+  .lista-item::before{
+    left: -5rem;
+  }
+  .lista-ligar button{
+    display: inline-block;
+    margin: 1rem 0.5rem;
+  }
+}
+
+@media(max-width: 650px){
+  .header-navegacao{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .final-comentario{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 4rem;
+  }
+  .main-final{
+    margin: 10rem 2rem 8rem 2rem;
+  }
 }
