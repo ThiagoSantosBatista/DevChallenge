@@ -22,6 +22,10 @@
   li{
       list-style: none;
   }
+  a{
+    text-decoration: none;
+    color: var(--texto);
+  }
   img{
       max-width: 100%;
       display: block;
@@ -41,16 +45,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 6rem;
       height: 9.4rem;
   }
   .logo{
       display: flex;
-      gap: 1rem
+      gap: 1rem;
+      padding-left: 6rem;
   }
   .navegacao-principal{
       display: flex;
       gap: 1rem;
+      padding-right: 6rem;
   }
   .nav-item{
       padding: 1.5rem;
@@ -74,7 +79,7 @@
     grid-template-rows: repeat(3, auto);
     row-gap: 6.5rem;
     padding: 0 6rem;
-    margin: 5.7rem 0;
+    margin: 5.7rem 0 9rem;
   }
   .fundo{
     justify-content: end;
@@ -94,4 +99,43 @@
     font-size: 2rem;
     font-weight: 700;
     color: var(--primaria-verde);
+  }
+  .footer{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  .termos-news{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+  }
+  .termos{
+    line-height: 3rem;
+  }
+  .newslet input{
+    margin-top: 1rem;
+    padding: 1.3rem 3rem 1.3rem 1rem;
+    border-color: #cecaca;
+  }
+  .newslet button{
+    padding: 1.5rem 2rem;
+    border: none;
+    font-weight: 700;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: white;
+    background-color: var(--primaria-verde);
+  }
+  .redes-bandeiras{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  .redes{
+    display: flex;
+    gap: 1.5rem;
+  }
+  .bandeiras{
+    display: flex;
+    gap: 1.5rem;
   }
