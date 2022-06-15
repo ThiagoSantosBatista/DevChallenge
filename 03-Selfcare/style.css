@@ -26,6 +26,12 @@
       max-width: 100%;
       display: block;
   }
+  p{
+    font-size: 1.6rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
   .container{
       max-width: 144rem;
       margin: 0 auto;
@@ -51,7 +57,41 @@
   }
   .main-info{
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 0 6rem;
-      
+      height: 8.5rem;
   }
-  
+  .main-info h2{
+    font-size: 2rem;
+  }
+  .linha{
+    background-color: var(--linha-divisoria);
+  }
+  .main-produtos{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 6.5rem;
+    padding: 0 6rem;
+    margin: 5.7rem 0;
+  }
+  .fundo{
+    justify-content: end;
+  }
+  .centro{
+    justify-content: center;
+  }
+  .produto{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+  }
+  .produto img{
+    cursor: pointer;
+  }
+  .preco{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primaria-verde);
+  }
