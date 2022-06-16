@@ -4,10 +4,13 @@
 Solução para o desafio de criar uma página para exibição de produtos de uma loja online chamada selfcare., do site: [DevChallenge](https://www.devchallenge.com.br/). 
 
 ## 🖥️ Demonstração
-![](https://s4.aconvert.com/convert/p3r68-cdx67/a1vsl-36roo.svg)
+![](https://s4.aconvert.com/convert/p3r68-cdx67/a8nbp-ny4t0.svg)
 
 ## 🔗 Link do site
 https://tsb-selfcare.netlify.app/ 
+
+## ℹ️ Sobre
+O desafio é construir uma página para exibição de produtos de uma loja online. Desafio feito por: [Thaysa](https://github.com/thaysagomes)
 
 ## 👨‍💻 Tecnologias
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
