@@ -6,3 +6,4 @@ Nesse repositório se encontra as soluções que realizei para os desafios propo
 |:------:|:-------|:----:|
 |<ul><li> - [x] </li></ul>|Amazing Graph|https://tsb-amazinggraph.netlify.app/|
 |<ul><li> - [x] </li></ul>|Codar.|https://tsb-codar.netlify.app/|
+|<ul><li> - [x] </li></ul>|Selfcare|https://tsb-selfcare.netlify.app/|
