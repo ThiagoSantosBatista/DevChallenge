@@ -39,7 +39,6 @@
   .container{
       max-width: 144rem;
       margin: 0 auto;
-      background: #f0ecec;
   }
   .header{
       display: flex;
@@ -103,6 +102,7 @@
   .footer{
     display: grid;
     grid-template-rows: auto auto;
+    background: var(--background);
   }
   .termos-news{
     display: flex;
@@ -115,7 +115,6 @@
   .newslet input{
     margin-top: 1rem;
     padding: 1.3rem 3rem 1.3rem 1rem;
-    border-color: #cecaca;
   }
   .newslet button{
     padding: 1.5rem 2rem;
@@ -123,6 +122,7 @@
     font-weight: 700;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
     color: white;
     background-color: var(--primaria-verde);
   }
