@@ -42,6 +42,7 @@ h3 {
 }
 .header {
   display: flex;
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,7 +73,7 @@ h3 {
   border-bottom: 0.3rem solid var(--primaria-verde);
   transition: 0.4s ease-in-out;
 }
-.main{
+.main {
   margin-top: 9.4rem;
 }
 .main-info {
@@ -141,10 +142,10 @@ p {
 .termos {
   line-height: 3rem;
 }
-.termos a h3{
+.termos a h3 {
   border-bottom: 0.3rem solid var(--background);
 }
-.termos a h3:hover{
+.termos a h3:hover {
   border-bottom: 0.3rem solid black;
   transition: 0.3s;
 }
@@ -162,7 +163,7 @@ p {
   color: white;
   background-color: var(--primaria-verde);
 }
-.newslet button:hover{
+.newslet button:hover {
   background-color: #51921c;
 }
 .redes-bandeiras {
@@ -177,4 +178,49 @@ p {
 .bandeiras {
   display: flex;
   gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .termos-news {
+    flex-direction: column;
+  }
+  .newslet {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .termos {
+    align-self: start;
+  }
+  .main-produtos {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+  }
+}
+@media (max-width: 450px) {
+  .logo,
+  .navegacao-principal,
+  .main-info,
+  .main-produtos,
+  .termos-news,
+  .redes-bandeiras {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .header {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .redes-bandeiras {
+    flex-direction: column;
+  }
+  .bandeiras {
+    margin-top: 2.5rem;
+  }
+  .newslet button {
+    padding: 1.5rem 4rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
 }
