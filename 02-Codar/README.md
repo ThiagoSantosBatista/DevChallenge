@@ -4,7 +4,7 @@
 Essa é uma solução para o desafio de criar uma landing page de uma empresa que desenvolve sites, do site: [DevChallenge](https://www.devchallenge.com.br/). 
 
 ## 🖥️ Demonstração
-![](https://s4.aconvert.com/convert/p3r68-cdx67/aa9b7-al5wx.svg)
+![](/Resultados/codar.png)
 
 ## 🔗 Link do site
 https://tsb-codar.netlify.app/

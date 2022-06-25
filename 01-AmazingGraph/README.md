@@ -4,7 +4,7 @@
 Essa é uma solução para o desafio de criar uma página sobre um site de criação de gráficos. do site: [DevChallenge](https://www.devchallenge.com.br/). 
 
 ## 🖥️ Demonstração
-![](https://s4.aconvert.com/convert/p3r68-cdx67/asldg-p0w35.svg)
+![](/Resultados/AmazingGraph.png)
 
 ## 🔗 Link do site
 https://tsb-amazinggraph.netlify.app/
